@@ -3,24 +3,24 @@
 
 ## Установка Squid
 ```
-  sudo apt-get install squid
+sudo apt-get install squid
 ```
 ## Настройка
 - содать папку build и закинуть туда redirector.py
 ```
-  mkdir /build
-  cp redirector.py /build/
+mkdir /build
+cp redirector.py /build/
 ```
 - список перенаправлений должен иметь формат JSON, имя "config.json" и находится в /build/
 - добавьте в конфигурацию для squid(/etc/squid/squid.conf)
 ```
-  url_rewrite_extras "%>a %>rm %un"
-  url_rewrite_children 1
-  url_rewrite_program /build/redirector.py
+url_rewrite_extras "%>a %>rm %un"
+url_rewrite_children 1
+url_rewrite_program /build/redirector.py
 ```
 - выдать права для того чтобы писались логи в файл logs.log
 ```
-  chmod -R 777 /build
+chmod -R 777 /build
 ```
 - перезапустите squid
 ```
