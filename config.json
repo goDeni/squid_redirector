@@ -1,5 +1,6 @@
 {
     "yandex.ru": "google.com",
+	"http://www.yandex.ru/":"http://www.google.ru/",
     "lurkmore.to": "wikipedia.org",
     "linux.org.ru": "kernel.org"
 }
