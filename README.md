@@ -4,7 +4,10 @@
 ## Установка Squid
 ```
 sudo apt-get install squid
+squid -v | grep Version
 ```
+Squid Cache: Version 3.5.27
+
 ## Настройка
 - содать папку build и закинуть туда redirector.py
 ```
