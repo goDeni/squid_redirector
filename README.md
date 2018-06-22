@@ -9,7 +9,7 @@
 - содать папку build и закинуть туда redirector.py
 ```
   mkdir /build
-  cp redirector /build/
+  cp redirector.py /build/
 ```
 - список перенаправлений должен иметь формат JSON и находится в /build/
 - добавьте в конфигурацию для squid(/etc/squid/squid.conf)
