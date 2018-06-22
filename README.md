@@ -18,6 +18,10 @@
   url_rewrite_children 1
   url_rewrite_program /build/redirector.py
 ```
+- выдать права для того чтобы писались логи в файл logs.log
+```
+  chmod 777 /build
+```
 - перезапустите squid
 ```
 systemctl restart squid
