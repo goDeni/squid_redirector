@@ -11,7 +11,7 @@
   mkdir /build
   cp redirector.py /build/
 ```
-- список перенаправлений должен иметь формат JSON и находится в /build/
+- список перенаправлений должен иметь формат JSON, имя "config.json" и находится в /build/
 - добавьте в конфигурацию для squid(/etc/squid/squid.conf)
 ```
   url_rewrite_extras "%>a %>rm %un"
