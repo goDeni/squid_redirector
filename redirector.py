@@ -20,9 +20,9 @@ def getList():
 
 def main():
     redirect_urls = getList()
-    time_change = int(getmtime(FILENAME))
-    response = '' 
+    time_change = int(getmtime(FILENAME)) 
     for request in sys.stdin:
+        response = ''
         logging.debug(datetime.now().strftime('%Y-%m-%d %H:%M:%S') 
             + '------------------------------------------------')
         
